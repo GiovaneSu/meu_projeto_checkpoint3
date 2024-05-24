@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função para registrar um novo usuário
     const registraUsuario = (inputNome, inputCpf, inputGen, inputEmail, inputSenha, inputSenhaVerifica) => {
-        if (inputSenha.value == inputSenhaVerifica.value) {
+        if (inputSenha.value === inputSenhaVerifica.value) {
             // Deixando o label em verde porque as senhas conferem.
             document.querySelector("label[for=idConfirmaSenha]").setAttribute("class", "sucesso");
 

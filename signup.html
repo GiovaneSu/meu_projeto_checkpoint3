@@ -9,7 +9,7 @@
 <body>
     <div class="signup-container">
         <h2>Cadastro</h2>
-        <form id="signupForm" onsubmit="return registraUsuario(idNome,idCpf,idGen,idEmail,idSenha,idConfirmaSenha)">
+        <form id="signupForm">
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for="idNome">Nome:</label>
@@ -33,6 +33,7 @@
                 <input type="password" id="idConfirmaSenha" required minlength="6">
             </fieldset>
             <button type="submit">Registrar</button>
+            <p id="error-message"></p>
         </form>
         <p>Já possui cadastro? <a href="login.html">Clique aqui</a></p>
     </div>
