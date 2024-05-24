@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-.login-container {
+.login-container, .signup-container {
     width: 300px;
     margin: 100px auto;
     padding: 20px;
@@ -14,17 +14,17 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-container h2 {
+h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.login-container label {
+label {
     display: block;
     margin-bottom: 5px;
 }
 
-.login-container input {
+input, select {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -32,7 +32,7 @@ body {
     border-radius: 3px;
 }
 
-.login-container button {
+button {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;
@@ -42,7 +42,7 @@ body {
     cursor: pointer;
 }
 
-.login-container button:hover {
+button:hover {
     background-color: #45a049;
 }
 

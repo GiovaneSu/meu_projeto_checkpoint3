@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Cadastro</h2>
+        <form id="signupForm" onsubmit="return registraUsuario(idNome,idCpf,idGen,idEmail,idSenha,idConfirmaSenha)">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="idNome">Nome:</label>
+                <input type="text" id="idNome" required minlength="3">
+                <label for="idCpf">CPF:</label>
+                <input type="text" id="idCpf" required minlength="14">
+                <label for="idGen">Gênero:</label>
+                <select id="idGen" required>
+                    <option value="m">Masculino</option>
+                    <option value="f">Feminino</option>
+                    <option value="o">Outros</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Dados de Acesso</legend>
+                <label for="idEmail">Email:</label>
+                <input type="email" id="idEmail" required>
+                <label for="idSenha">Senha:</label>
+                <input type="password" id="idSenha" required minlength="6">
+                <label for="idConfirmaSenha">Confirme sua senha:</label>
+                <input type="password" id="idConfirmaSenha" required minlength="6">
+            </fieldset>
+            <button type="submit">Registrar</button>
+        </form>
+        <p>Já possui cadastro? <a href="login.html">Clique aqui</a></p>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
